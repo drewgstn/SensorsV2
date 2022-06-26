@@ -16,18 +16,27 @@ struct NotesDetail: View {
         NavigationStack {
             List {
                 Section(header: Text("Notes")) {
-                    TextField(
-                        "Type notes here:",
-                        text: $report
-                    )
+                    NavigationLink {
+                            GyroTests()
+                        } label: {
+                            Image(systemName: "note.text")
+                            Text("Launch Notes")
+                                .foregroundColor(.primary)
+                            }
+                    NavigationLink {
+                            GyroTests()
+                        } label: {
+                            Image(systemName: "pencil")
+                            Text("Launch Pages")
+                                .foregroundColor(.primary)
+                            }
                     .multilineTextAlignment(.leading)
-                    .padding(.bottom, 150.0)
                 }
             }
                 .navigationTitle("Notes")
                 .navigationBarTitleDisplayMode(.inline)
                 .navigationBarItems(trailing:
-                                            Button("Save") {
+                                            Button("Done") {
                     dismiss()
                                                     }
                                                 

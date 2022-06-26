@@ -39,8 +39,69 @@ struct SensorTestsView: View {
                                 .foregroundColor(.primary)
                             }
                 }
-            }
-            .navigationDestination(for: Color.self) { color in
+                Section(header: Text("Interfaces")) {
+                    NavigationLink {
+                            GyroTests()
+                        } label: {
+                                Text("Main")
+                                .foregroundColor(.primary)
+                            }
+                    
+                    NavigationLink {
+                            AccelTests()
+                        } label: {
+                                Text("Upload")
+                                .foregroundColor(.primary)
+                            }
+                    NavigationLink {
+                        AccountInt()
+                        } label: {
+                                Text("Accounts")
+                                .foregroundColor(.primary)
+                            }
+                    NavigationLink {
+                            TempTests()
+                        } label: {
+                                Text("Interactions")
+                                .foregroundColor(.primary)
+                            }
+                    NavigationLink {
+                            TempTests()
+                        } label: {
+                                Text("ARInteractions")
+                                .foregroundColor(.primary)
+                            }
+                    NavigationLink {
+                            TempTests()
+                        } label: {
+                                Text("VRInteractions")
+                                .foregroundColor(.primary)
+                            }
+                    NavigationLink {
+                            TempTests()
+                        } label: {
+                                Text("InteractiveElements")
+                                .foregroundColor(.primary)
+                            }
+                    NavigationLink {
+                            TempTests()
+                        } label: {
+                                Text("Performance")
+                                .foregroundColor(.primary)
+                            }
+                    NavigationLink {
+                            TempTests()
+                        } label: {
+                                Text("APIs/Algorithms")
+                                .foregroundColor(.primary)
+                            }
+                    NavigationLink {
+                            TempTests()
+                        } label: {
+                                Text("Filters")
+                                .foregroundColor(.primary)
+                            }
+                }
             }
             .navigationTitle("Sensors")
             .navigationBarItems(trailing:

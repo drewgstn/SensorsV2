@@ -16,7 +16,7 @@ struct TabViewC: View {
                 }
             ARKitTestsView()
                 .tabItem {
-                    Label("ARKit", systemImage: "arkit")
+                    Label("RoomPlan", systemImage: "arkit")
                 }
         }
     }

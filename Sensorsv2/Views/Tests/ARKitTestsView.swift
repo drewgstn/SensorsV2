@@ -14,7 +14,7 @@ struct ARKitTestsView: View {
                 Image(systemName: "arkit")
                     .imageScale(.large)
                     .foregroundColor(.primary)
-                Text("arkit3")
+                Text("roomPlan")
             }
             .padding(.top, 350.0)
         }

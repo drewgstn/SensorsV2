@@ -16,7 +16,7 @@ struct AccelTests: View {
     @State private var yaw = Double.zero
     @State private var roll = Double.zero
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack{
                 Text("p: \(pitch)")
                 Text("y: \(yaw)")

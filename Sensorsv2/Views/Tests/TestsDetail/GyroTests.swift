@@ -16,7 +16,7 @@ struct GyroTests: View {
     @State private var gyroy = Double.zero
     @State private var gyroz = Double.zero
     var body: some View {
-         NavigationView {
+         NavigationStack {
             VStack {
                 Text("x: 0.000000")
                 Text("y: 0.000000")
