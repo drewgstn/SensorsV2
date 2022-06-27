@@ -56,6 +56,7 @@ struct AccountIntDetail: View {
                     .padding([.leading, .trailing], 20)
                     .padding(.top, -60.0)
                     .padding(.bottom, 130.0)
+                
                 .navigationTitle("Edit Profile")
                 .navigationBarTitleDisplayMode(.inline)
                 .navigationBarItems(trailing:

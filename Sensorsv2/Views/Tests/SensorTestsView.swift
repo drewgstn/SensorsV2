@@ -54,7 +54,7 @@ struct SensorTestsView: View {
                                 .foregroundColor(.primary)
                             }
                     NavigationLink {
-                        AccountInt()
+                        AccountIntMain()
                         } label: {
                                 Text("Accounts")
                                 .foregroundColor(.primary)

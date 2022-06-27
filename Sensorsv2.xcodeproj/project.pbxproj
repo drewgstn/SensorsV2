@@ -18,6 +18,9 @@
 		286DBDEE2866441B003C30F9 /* ARKitTestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DBDED2866441B003C30F9 /* ARKitTestsView.swift */; };
 		286DBDF028664478003C30F9 /* SensorTestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DBDEF28664478003C30F9 /* SensorTestsView.swift */; };
 		287F8DBA28680A0C009047B7 /* AccountIntDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F8DB928680A0C009047B7 /* AccountIntDetail.swift */; };
+		287F8DBC28693A1A009047B7 /* AccountIntMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F8DBB28693A1A009047B7 /* AccountIntMain.swift */; };
+		287F8DBE28693ACF009047B7 /* AccountIntI2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F8DBD28693ACF009047B7 /* AccountIntI2.swift */; };
+		287F8DC028693B08009047B7 /* AccountIntDetailI2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F8DBF28693B08009047B7 /* AccountIntDetailI2.swift */; };
 		288EED43286511DD002B4BBD /* Sensorsv2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288EED42286511DD002B4BBD /* Sensorsv2App.swift */; };
 		288EED45286511DD002B4BBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288EED44286511DD002B4BBD /* ContentView.swift */; };
 		288EED47286511DE002B4BBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 288EED46286511DE002B4BBD /* Assets.xcassets */; };
@@ -58,6 +61,9 @@
 		286DBDED2866441B003C30F9 /* ARKitTestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitTestsView.swift; sourceTree = "<group>"; };
 		286DBDEF28664478003C30F9 /* SensorTestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorTestsView.swift; sourceTree = "<group>"; };
 		287F8DB928680A0C009047B7 /* AccountIntDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountIntDetail.swift; sourceTree = "<group>"; };
+		287F8DBB28693A1A009047B7 /* AccountIntMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountIntMain.swift; sourceTree = "<group>"; };
+		287F8DBD28693ACF009047B7 /* AccountIntI2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountIntI2.swift; sourceTree = "<group>"; };
+		287F8DBF28693B08009047B7 /* AccountIntDetailI2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountIntDetailI2.swift; sourceTree = "<group>"; };
 		288EED3F286511DD002B4BBD /* Sensorsv2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sensorsv2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		288EED42286511DD002B4BBD /* Sensorsv2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensorsv2App.swift; sourceTree = "<group>"; };
 		288EED44286511DD002B4BBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,6 +123,18 @@
 				286DBDEB286640D7003C30F9 /* tempTests.swift */,
 			);
 			path = TestsDetail;
+			sourceTree = "<group>";
+		};
+		287F8DC1286948CA009047B7 /* AccountViews */ = {
+			isa = PBXGroup;
+			children = (
+				287F8DBB28693A1A009047B7 /* AccountIntMain.swift */,
+				28F3F73F2867F4180033C867 /* AccountInt.swift */,
+				287F8DBD28693ACF009047B7 /* AccountIntI2.swift */,
+				287F8DB928680A0C009047B7 /* AccountIntDetail.swift */,
+				287F8DBF28693B08009047B7 /* AccountIntDetailI2.swift */,
+			);
+			path = AccountViews;
 			sourceTree = "<group>";
 		};
 		288EED36286511DD002B4BBD = {
@@ -200,8 +218,7 @@
 		28F3F73E2867F3E50033C867 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				28F3F73F2867F4180033C867 /* AccountInt.swift */,
-				287F8DB928680A0C009047B7 /* AccountIntDetail.swift */,
+				287F8DC1286948CA009047B7 /* AccountViews */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -348,9 +365,12 @@
 				286DBDEE2866441B003C30F9 /* ARKitTestsView.swift in Sources */,
 				288EED7128655348002B4BBD /* TabView.swift in Sources */,
 				286DBDE128663559003C30F9 /* VersionInfoDetail.swift in Sources */,
+				287F8DBC28693A1A009047B7 /* AccountIntMain.swift in Sources */,
 				286DBDEC286640D7003C30F9 /* tempTests.swift in Sources */,
 				288EED43286511DD002B4BBD /* Sensorsv2App.swift in Sources */,
+				287F8DC028693B08009047B7 /* AccountIntDetailI2.swift in Sources */,
 				286DBDD9286604A0003C30F9 /* InfoSheet.swift in Sources */,
+				287F8DBE28693ACF009047B7 /* AccountIntI2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

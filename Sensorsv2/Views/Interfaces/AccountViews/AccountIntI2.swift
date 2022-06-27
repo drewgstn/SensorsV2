@@ -1,4 +1,13 @@
 //
+//  AccountIntI2.swift
+//  Sensorsv2
+//
+//  Created by Drew Goldstein on 6/26/22.
+//
+
+import SwiftUI
+
+//
 //  AccountInt.swift
 //  Sensorsv2
 //
@@ -7,7 +16,7 @@
 
 import SwiftUI
 
-struct AccountInt: View {
+struct AccountIntI2: View {
     let gradient = Gradient(colors: [.black, .pink])
     @State var isPresented: Bool = false
     var body: some View {
@@ -95,7 +104,7 @@ struct AccountInt: View {
             }
             )
             .sheet(isPresented: $isPresented) {
-                AccountIntDetail()
+                AccountIntDetailI2()
             .foregroundColor(Color.secondary)
             }
             .sheet(isPresented: $isPresented) {
@@ -107,9 +116,9 @@ struct AccountInt: View {
     }
 }
 
-struct AccountInt_Previews: PreviewProvider {
+struct AccountIntI2_Previews: PreviewProvider {
     static var previews: some View {
-        AccountInt()
+        AccountIntI2()
     }
 }
 
