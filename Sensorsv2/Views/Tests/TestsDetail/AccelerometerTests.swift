@@ -9,6 +9,7 @@ import SwiftUI
 import CoreMotion
 
 struct AccelTests: View {
+    @State var isPresented: Bool = false
     let motionManager = CMMotionManager()
     let queue = OperationQueue()
     
@@ -46,6 +47,46 @@ struct AccelTests: View {
             }
             .navigationTitle("Acceleromter Data")
             .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(trailing:
+                                    Button(action: {
+                isPresented = true
+            }){
+                Image(systemName: "info.circle")
+            }
+            )
+            .padding(.leading, 0.0)
+            .sheet(isPresented: $isPresented) {
+                SheetViewA()
+            .foregroundColor(Color.secondary)
+            }
+        }
+    }
+}
+
+struct SheetViewA: View {
+    @Environment(\.dismiss) var dismiss
+
+    var body: some View {
+        NavigationView {
+            VStack {
+                Text("CoreMotion live accelerometer events, using CMMM, OQ. ")
+                    .fontWeight(.regular)
+                    .foregroundColor(.primary)
+                
+                Text("WARNING DOES NOT CHECK AVAILIBILITY, RUNS PAST CLOSURE")
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.red)
+            }
+            .padding([.leading, .trailing], 10)
+            .padding(.bottom, 600)
+            .navigationTitle("Accelerometer Data Info")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(trailing:
+                                    Button("Done") {
+                dismiss() // Implicitly calls dismiss.callAsFunction()
+                
+            }
+                .foregroundColor(.primary))
         }
     }
 }

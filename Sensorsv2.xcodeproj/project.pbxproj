@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2803C41828694B0200511F63 /* FeedViewI1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2803C41728694B0200511F63 /* FeedViewI1.swift */; };
+		2803C41C28694B1A00511F63 /* FeedViewI2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2803C41B28694B1A00511F63 /* FeedViewI2.swift */; };
+		2803C41E28694B4300511F63 /* FeedViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2803C41D28694B4300511F63 /* FeedViewMain.swift */; };
 		286DBDD9286604A0003C30F9 /* InfoSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DBDD8286604A0003C30F9 /* InfoSheet.swift */; };
 		286DBDDD286627F3003C30F9 /* TestDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DBDDC286627F3003C30F9 /* TestDetail.swift */; };
 		286DBDDF28662A71003C30F9 /* NotesDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DBDDE28662A71003C30F9 /* NotesDetail.swift */; };
@@ -50,6 +53,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2803C41728694B0200511F63 /* FeedViewI1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewI1.swift; sourceTree = "<group>"; };
+		2803C41B28694B1A00511F63 /* FeedViewI2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewI2.swift; sourceTree = "<group>"; };
+		2803C41D28694B4300511F63 /* FeedViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewMain.swift; sourceTree = "<group>"; };
 		286DBDD8286604A0003C30F9 /* InfoSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSheet.swift; sourceTree = "<group>"; };
 		286DBDDC286627F3003C30F9 /* TestDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDetail.swift; sourceTree = "<group>"; };
 		286DBDDE28662A71003C30F9 /* NotesDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDetail.swift; sourceTree = "<group>"; };
@@ -137,6 +143,16 @@
 			path = AccountViews;
 			sourceTree = "<group>";
 		};
+		287F8DC228694A9F009047B7 /* FeedViews */ = {
+			isa = PBXGroup;
+			children = (
+				2803C41D28694B4300511F63 /* FeedViewMain.swift */,
+				2803C41728694B0200511F63 /* FeedViewI1.swift */,
+				2803C41B28694B1A00511F63 /* FeedViewI2.swift */,
+			);
+			path = FeedViews;
+			sourceTree = "<group>";
+		};
 		288EED36286511DD002B4BBD = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +234,7 @@
 		28F3F73E2867F3E50033C867 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				287F8DC228694A9F009047B7 /* FeedViews */,
 				287F8DC1286948CA009047B7 /* AccountViews */,
 			);
 			path = Interfaces;
@@ -355,8 +372,10 @@
 			files = (
 				286DBDE828664052003C30F9 /* AccelerometerTests.swift in Sources */,
 				286DBDDF28662A71003C30F9 /* NotesDetail.swift in Sources */,
+				2803C41828694B0200511F63 /* FeedViewI1.swift in Sources */,
 				286DBDEA28664098003C30F9 /* LiDARTests.swift in Sources */,
 				288EED45286511DD002B4BBD /* ContentView.swift in Sources */,
+				2803C41C28694B1A00511F63 /* FeedViewI2.swift in Sources */,
 				286DBDF028664478003C30F9 /* SensorTestsView.swift in Sources */,
 				28F3F7402867F4180033C867 /* AccountInt.swift in Sources */,
 				287F8DBA28680A0C009047B7 /* AccountIntDetail.swift in Sources */,
@@ -364,6 +383,7 @@
 				286DBDDD286627F3003C30F9 /* TestDetail.swift in Sources */,
 				286DBDEE2866441B003C30F9 /* ARKitTestsView.swift in Sources */,
 				288EED7128655348002B4BBD /* TabView.swift in Sources */,
+				2803C41E28694B4300511F63 /* FeedViewMain.swift in Sources */,
 				286DBDE128663559003C30F9 /* VersionInfoDetail.swift in Sources */,
 				287F8DBC28693A1A009047B7 /* AccountIntMain.swift in Sources */,
 				286DBDEC286640D7003C30F9 /* tempTests.swift in Sources */,
@@ -527,7 +547,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 20a;
 				DEVELOPMENT_ASSET_PATHS = "\"Sensorsv2/Preview Content\"";
 				DEVELOPMENT_TEAM = YWZ8Q2Q4Z8;
 				ENABLE_PREVIEWS = YES;
@@ -536,13 +556,13 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dg.Sensorsv2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -557,7 +577,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 20a;
 				DEVELOPMENT_ASSET_PATHS = "\"Sensorsv2/Preview Content\"";
 				DEVELOPMENT_TEAM = YWZ8Q2Q4Z8;
 				ENABLE_PREVIEWS = YES;
@@ -566,13 +586,13 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dg.Sensorsv2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

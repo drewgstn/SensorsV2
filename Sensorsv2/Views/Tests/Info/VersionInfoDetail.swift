@@ -10,26 +10,20 @@ import SwiftUI
 struct VersionInfoDetail: View {
     var body: some View {
         NavigationView {
-            VStack {
-                Section {
-                    Text("2.0 (1) includes improvements and bug fixes for Sensors V2")
-                        .multilineTextAlignment(.center)
+                List {
+                    Section(header: Text("Version Info"),footer: Text("Sensors 2.0 (20a)")
+                        .font(.headline)
+                        .fontWeight(.medium)
                         .foregroundColor(.primary)
-                        .padding(.bottom, 650.0)
-                        .padding([.leading, .trailing], 2.0)
-                }
-                
-                    
-            }
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .principal) {
-                    Text("About this Version")
-                        .font(.largeTitle.bold())
-                        .accessibilityAddTraits(.isHeader)
+                        .padding(.top, 5.0)) {
+                    }
+                    Section(footer: Text("This version indluded improvements and bug fixes for Sensors 2.0.")
+                        .font(.callout)
+                        .fontWeight(.regular)
                         .foregroundColor(.primary)
+                        .padding(.top, -25)) {
+                    }
                 }
-            }
         }
     }
 }

@@ -10,7 +10,10 @@ import SwiftUI
 struct AccountIntDetailI2: View {
     @State var isPresented: Bool = false
     @State private var disabled = true
-    @State private var report: String = ""
+    @State private var name: String = ""
+    @State private var usern: String = ""
+    @State private var bio: String = ""
+    @State private var loc: String = ""
     @Environment(\.dismiss) private var dismiss
     var body: some View {
         NavigationStack {
@@ -52,7 +55,7 @@ struct AccountIntDetailI2: View {
                             
                             TextField(
                                 "drew",
-                                text: $report
+                                text: $name
                             )
                             .foregroundColor(.primary)
                             .padding(.leading, 219)
@@ -62,7 +65,7 @@ struct AccountIntDetailI2: View {
                             
                             TextField(
                                 "@drewgstn",
-                                text: $report
+                                text: $usern
                             )
                             .foregroundColor(.primary)
                             .padding(.leading, 137)
@@ -75,7 +78,7 @@ struct AccountIntDetailI2: View {
                             
                             TextField(
                                 "bio",
-                                text: $report
+                                text: $bio
                             )
                             .foregroundColor(.primary)
                             .padding(.leading, 254)
@@ -83,12 +86,14 @@ struct AccountIntDetailI2: View {
                         HStack {
                             Text("Location")
                             
+                            
                             TextField(
                                 "mars",
-                                text: $report
+                                text: $loc
                             )
                             .foregroundColor(.primary)
                             .padding(.leading, 199)
+                            
                         }
                         
                     }

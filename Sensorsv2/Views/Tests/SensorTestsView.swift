@@ -41,82 +41,84 @@ struct SensorTestsView: View {
                 }
                 Section(header: Text("Interfaces")) {
                     NavigationLink {
-                            GyroTests()
-                        } label: {
-                                Text("Main")
+                        FeedViewMain()
+                        } label: { //Feed View UIs
+                                Text("FeedUIs")
                                 .foregroundColor(.primary)
                             }
                     
                     NavigationLink {
                             AccelTests()
-                        } label: {
-                                Text("Upload")
+                        } label: { //Upload View UIs
+                                Text("UploadUIs")
                                 .foregroundColor(.primary)
                             }
                     NavigationLink {
                         AccountIntMain()
-                        } label: {
-                                Text("Accounts")
+                        } label: { //Account View UIs
+                                Text("AccountsUIs")
                                 .foregroundColor(.primary)
                             }
                     NavigationLink {
                             TempTests()
-                        } label: {
+                        } label: { //User Interaction UIs
                                 Text("Interactions")
                                 .foregroundColor(.primary)
                             }
                     NavigationLink {
                             TempTests()
-                        } label: {
+                        } label: { //Artifical Intel UIs
                                 Text("ARInteractions")
                                 .foregroundColor(.primary)
                             }
                     NavigationLink {
                             TempTests()
-                        } label: {
+                        } label: { // ******* ***** *** UIs
                                 Text("VRInteractions")
                                 .foregroundColor(.primary)
                             }
                     NavigationLink {
                             TempTests()
-                        } label: {
+                        } label: { //Element View UIs
                                 Text("InteractiveElements")
                                 .foregroundColor(.primary)
                             }
                     NavigationLink {
                             TempTests()
-                        } label: {
+                        } label: { //App Performance UIs
                                 Text("Performance")
                                 .foregroundColor(.primary)
                             }
                     NavigationLink {
                             TempTests()
-                        } label: {
+                        } label: { //Open Source Interfaces
                                 Text("APIs/Algorithms")
                                 .foregroundColor(.primary)
                             }
                     NavigationLink {
                             TempTests()
-                        } label: {
+                        } label: { //-\://- UIs
                                 Text("Filters")
                                 .foregroundColor(.primary)
                             }
                 }
             }
             .navigationTitle("Sensors")
-            .navigationBarItems(trailing:
-                                    Button(action: {
-                isPresented = true
-            }){
-                Image(systemName: "info.circle")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        isPresented = true
+                    }){
+                        Image(systemName: "info.circle")
+                    }
+                    
+                    .padding(.leading, 0.0)
+                    .sheet(isPresented: $isPresented) {
+                        InfoSheet()
+                            .foregroundColor(Color.secondary)
+                    }
+                }
             }
-            )
-            .padding(.leading, 0.0)
-            .sheet(isPresented: $isPresented) {
-                InfoSheet()
-            .foregroundColor(Color.secondary)
-            }
-            
         }
     }
 }

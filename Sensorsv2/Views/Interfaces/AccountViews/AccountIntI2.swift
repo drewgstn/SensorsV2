@@ -69,7 +69,7 @@ struct AccountIntI2: View {
                             .background()
                             .padding(.top, 10)
                     }
-                    .padding(.top, 0)
+                    
                 }
             }
             .toolbar {
@@ -81,37 +81,39 @@ struct AccountIntI2: View {
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
-            .navigationBarItems(trailing:
-            Menu(content: {
-                Section {
-                    Button(action: {
-                        isPresented = true
-                    }){
-                        Label("Edit Profile", systemImage: "square.and.pencil")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Menu(content: {
+                        Section {
+                            Button(action: {
+                                isPresented = true
+                            }){
+                                Label("Edit Profile", systemImage: "square.and.pencil")
+                            }
+                        }
+                        Section {
+                            Button(action: {
+                                isPresented = true
+                            }){
+                                Label("Share Profile...", systemImage: "square.and.arrow.up")
+                            }
+                        }
+                    }) {
+                        Image(systemName: "ellipsis.circle.fill")
+                            .imageScale(.large)
+                            .foregroundColor(Color.primary)
+                    }
+                    
+                    .sheet(isPresented: $isPresented) {
+                        AccountIntDetailI2()
+                            .foregroundColor(Color.secondary)
+                    }
+                    .sheet(isPresented: $isPresented) {
+                        VersionInfoDetail()
+                            .foregroundColor(Color.secondary)
                     }
                 }
-                Section {
-                    Button(action: {
-                        isPresented = true
-                    }){
-                        Label("Share Profile...", systemImage: "square.and.arrow.up")
-                    }
-                }
-            }) {
-                Image(systemName: "ellipsis.circle.fill")
-                    .imageScale(.large)
-                    .foregroundColor(Color.primary)
             }
-            )
-            .sheet(isPresented: $isPresented) {
-                AccountIntDetailI2()
-            .foregroundColor(Color.secondary)
-            }
-            .sheet(isPresented: $isPresented) {
-                VersionInfoDetail()
-                    .foregroundColor(Color.secondary)
-            }
-            
         }
     }
 }
